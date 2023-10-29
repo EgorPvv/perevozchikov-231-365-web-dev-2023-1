@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Модная форма обратной связи </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1> обратная связь </h1>
+        </header>
+        <section>
+            <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="fio">фамилия_имя_отчество_</label>
+                    <br>
+                    <input type="text" name="fio" id="fio" placeholder="ф_и_о_" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">почта_</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="id@example.ru" required>
+                </div>
+                <div class="form-group">
+                    <label> откуда о нас узнали? </label>
+                    <br>
+                    <input type="radio" name="radio" id="adv" value="adv">
+                    <label for="adv">реклама</label>
+                    <input type="radio" name="radio" id="friends" value="friends">
+                    <label for="friends">друзья</label>
+                    <input type="radio" name="radio" id="tv" value="tv">
+                    <label for="tv">тв</label>
+                </div>
+                <div class="form-group">
+                    <label>категория обращения</label>
+                    <br>
+                    <select name="category" id="category">
+                        <option value="negative">жалоба</option>
+                        <option value="neutral">обращение</option>
+                        <option value="positive">похвала</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>текст обращения</label>
+                    <br>
+                    <textarea name="message" id="message" placeholder="текст обращения"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="file" name="file" id="file" multiple >
+                </div>
+                <div class="form-group">
+                    <label>согласие</label>
+                    <br>
+                    <input type="checkbox" name="agree" id="agree" required>
+                    <label for="agree">даю согласие на обработку своих персональных данных</label>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </body>
+    </html>

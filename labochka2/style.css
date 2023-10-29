@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+body {
+    font-family: "Inter", regular;
+    background-color: #C8C8C8;
+    color: #323232;
+}
+label{
+    font-family:"Inter", light;
+}
+main {
+    font-family: "Inter", regular;
+}
+h1{
+    font-size: 150px;
+    margin-top:-75px;
+    color: #323232;
+}
+header{
+    font-family: "Inter", light;
+    text-align:center;
+}
+button{
+    background-color: #ED903A;
+    border-radius: 9px;
+}
+.form-group{
+    margin-bottom: 25px;
+}
+section{
+    text-align: center;
+}
