@@ -40,7 +40,7 @@ h1{
     padding-top: 6.2rem;
     padding-left: 1rem;
     width: 17rem;
-    position: fixed;
+    position: absolute;
 }
 
 .page-content{
